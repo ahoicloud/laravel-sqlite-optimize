@@ -17,9 +17,6 @@ class SqliteOptimizeServiceProvider extends PackageServiceProvider
          */
         $package
             ->name('laravel-sqlite-optimize')
-            ->hasConfigFile()
-            ->hasViews()
-            ->hasMigration('create_laravel-sqlite-optimize_table')
             ->hasCommand(SqliteOptimizeCommand::class);
     }
 }
