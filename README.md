@@ -5,7 +5,7 @@
 [![GitHub Code Style Action Status](https://img.shields.io/github/actions/workflow/status/ahoicloud/laravel-sqlite-optimize/fix-php-code-style-issues.yml?branch=main&label=code%20style&style=flat-square)](https://github.com/ahoicloud/laravel-sqlite-optimize/actions?query=workflow%3A"Fix+PHP+code+style+issues"+branch%3Amain)
 [![Total Downloads](https://img.shields.io/packagist/dt/ahoicloud/laravel-sqlite-optimize.svg?style=flat-square)](https://packagist.org/packages/ahoicloud/laravel-sqlite-optimize)
 
-This package should optimize SQLite for usage in Larvel. Inspired by the Article from [Italo Baeza Cabrera](https://medium.com/swlh/laravel-optimizing-sqlite-to-dangerous-speeds-ff04111b1f22)
+This package should optimize SQLite for usage in Laravel. Inspired by the Article from [Italo Baeza Cabrera](https://medium.com/swlh/laravel-optimizing-sqlite-to-dangerous-speeds-ff04111b1f22)
 
 
 ## Installation
