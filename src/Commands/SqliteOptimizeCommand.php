@@ -27,6 +27,8 @@ class SqliteOptimizeCommand extends Command
 
     /**
      * Execute the console command.
+     *
+     * @return int
      */
     public function handle(DatabaseManager $manager): int
     {
