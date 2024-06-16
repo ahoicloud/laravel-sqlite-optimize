@@ -32,7 +32,7 @@ class SqliteBackupCommand extends Command
         $backupPath = database_path('backups');
 
         // Create the backup directory if it doesn't exist
-        if (File::isDirectory($backupPath)) {
+        if (File::isDirectory($backupPath)===false) {
             $this->info('Backup directory created at: '.$backupPath);
             File::makeDirectory($backupPath);
         }
