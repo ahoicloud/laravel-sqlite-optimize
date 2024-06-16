@@ -29,6 +29,12 @@ class SqliteBackupCommand extends Command
         $database = config('database.connections.sqlite.database');
         $filename = 'backup-'.now()->timestamp.'.sql';
         $this->info('Starting SQLite backup...');
+        $backupPath = database_path('backups');
+
+        // Create the backup directory if it doesn't exist
+        if (! File::ensureDirectoryExists($backupPath)) {
+            File::makeDirectory($backupPath);
+        }
 
         try {
             // Create a backup of the SQLite database
