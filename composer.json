@@ -4,6 +4,10 @@
     "keywords": [
         "AHOI",
         "laravel",
+        "sqlite",
+        "sqllite",
+        "sqlite-optimize",
+        "sqlite-performance",
         "laravel-sqlite-optimize"
     ],
     "homepage": "https://github.com/ahoicloud/laravel-sqlite-optimize",
