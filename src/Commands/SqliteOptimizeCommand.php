@@ -1,12 +1,12 @@
 <?php
 
-namespace VendorName\Skeleton\Commands;
+namespace AHOI\SqliteOptimize\Commands;
 
 use Illuminate\Console\Command;
 
-class SkeletonCommand extends Command
+class SqliteOptimizeCommand extends Command
 {
-    public $signature = 'skeleton';
+    public $signature = 'laravel-sqlite-optimize';
 
     public $description = 'My command';
 
