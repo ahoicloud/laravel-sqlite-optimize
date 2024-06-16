@@ -34,8 +34,7 @@
     },
     "autoload": {
         "psr-4": {
-            "AHOI\\SqliteOptimize\\": "src/",
-            "AHOI\\SqliteOptimize\\Database\\Factories\\": "database/factories/"
+            "AHOI\\SqliteOptimize\\": "src/"
         }
     },
     "autoload-dev": {
