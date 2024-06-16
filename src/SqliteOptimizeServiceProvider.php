@@ -2,9 +2,9 @@
 
 namespace AHOI\SqliteOptimize;
 
+use AHOI\SqliteOptimize\Commands\SqliteOptimizeCommand;
 use Spatie\LaravelPackageTools\Package;
 use Spatie\LaravelPackageTools\PackageServiceProvider;
-use AHOI\SqliteOptimize\Commands\SqliteOptimizeCommand;
 
 class SqliteOptimizeServiceProvider extends PackageServiceProvider
 {

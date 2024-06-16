@@ -2,9 +2,9 @@
 
 namespace AHOI\SqliteOptimize\Tests;
 
+use AHOI\SqliteOptimize\SqliteOptimizeServiceProvider;
 use Illuminate\Database\Eloquent\Factories\Factory;
 use Orchestra\Testbench\TestCase as Orchestra;
-use AHOI\SqliteOptimize\SqliteOptimizeServiceProvider;
 
 class TestCase extends Orchestra
 {
