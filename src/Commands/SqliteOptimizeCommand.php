@@ -16,7 +16,7 @@ class SqliteOptimizeCommand extends Command
      *
      * @var string
      */
-    public $signature = 'sqlite:wal-enable
+    protected $signature = 'sqlite:wal-enable
                             {connection=sqlite : The connection to enable WAL journal}';
 
      /**
@@ -24,7 +24,7 @@ class SqliteOptimizeCommand extends Command
      *
      * @var string
      */
-    public $description = 'Enables WAL journal on SQLite databases as performance optimization.';
+    protected $description = 'Enables WAL journal on SQLite databases as performance optimization.';
 
      /**
      * Execute the console command.
@@ -32,7 +32,7 @@ class SqliteOptimizeCommand extends Command
      * @param  \Illuminate\Database\DatabaseManager $manager
      * @return int
      */
-    public function handle(DatabaseManager $manager)
+    public function handle(DatabaseManager $manager): int
     {
         $this->setWalJournalMode(
             $db = $this->getDatabase($manager, $connection = $this->argument('connection'))
@@ -41,7 +41,8 @@ class SqliteOptimizeCommand extends Command
         $journal = $this->getJournalMode($db);
 
         if ($journal !== 'wal') {
-            return $this->error("The '$connection' could not be set as WAL, returned [$journal] as journal mode.");
+             $this->error("The '$connection' could not be set as WAL, returned [$journal] as journal mode.");
+            return Command::FAILURE;
         }
 
         $this->info("The '$connection' connection has been set as [$journal] journal mode.");
@@ -86,6 +87,6 @@ class SqliteOptimizeCommand extends Command
      */
     protected function getJournalMode(ConnectionInterface $connection)
     {
-        return data_get($connection->select(new Expression('PRAGMA journal_mode')), '0.journal_mode');
+        return data_get($connection->select('PRAGMA journal_mode'), '0.journal_mode');
     }
 }
