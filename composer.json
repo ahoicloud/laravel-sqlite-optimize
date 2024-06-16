@@ -3,7 +3,12 @@
     "description": "Optimizing SQLite in Laravel",
     "keywords": [
         "AHOI",
+        "ahoicloud",
         "laravel",
+        "sqlite",
+        "sqllite",
+        "sqlite-optimize",
+        "sqlite-performance",
         "laravel-sqlite-optimize"
     ],
     "homepage": "https://github.com/ahoicloud/laravel-sqlite-optimize",
@@ -34,8 +39,7 @@
     },
     "autoload": {
         "psr-4": {
-            "AHOI\\SqliteOptimize\\": "src/",
-            "AHOI\\SqliteOptimize\\Database\\Factories\\": "database/factories/"
+            "AHOI\\SqliteOptimize\\": "src/"
         }
     },
     "autoload-dev": {
