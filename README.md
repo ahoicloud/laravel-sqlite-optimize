@@ -25,6 +25,13 @@ php artisan sqlite:wal-enable sqlite
 
 Where `sqlite` is the connection name.
 
+### Perform database backup
+```php
+php artisan sqlite:backup
+```
+
+Puts a backup for the sqlite file in the directory database_path(backup/) path
+
 ## Testing
 
 ```bash

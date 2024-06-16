@@ -8,7 +8,7 @@ use Illuminate\Database\DatabaseManager;
 use Illuminate\Database\SQLiteConnection;
 use LogicException;
 
-class SqliteOptimizeCommand extends Command
+class SqliteWalEnableCommand extends Command
 {
     /**
      * The name and signature of the console command.

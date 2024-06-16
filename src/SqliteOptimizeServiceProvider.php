@@ -2,7 +2,8 @@
 
 namespace AHOI\SqliteOptimize;
 
-use AHOI\SqliteOptimize\Commands\SqliteOptimizeCommand;
+use AHOI\SqliteOptimize\Commands\SqliteBackupCommand;
+use AHOI\SqliteOptimize\Commands\SqliteWalEnableCommand;
 use Spatie\LaravelPackageTools\Package;
 use Spatie\LaravelPackageTools\PackageServiceProvider;
 
@@ -17,6 +18,7 @@ class SqliteOptimizeServiceProvider extends PackageServiceProvider
          */
         $package
             ->name('laravel-sqlite-optimize')
-            ->hasCommand(SqliteOptimizeCommand::class);
+            ->hasCommand(SqliteWalEnableCommand::class)
+            ->hasCommand(SqliteBackupCommand::class);
     }
 }
