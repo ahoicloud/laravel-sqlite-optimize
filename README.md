@@ -5,15 +5,8 @@
 [![GitHub Code Style Action Status](https://img.shields.io/github/actions/workflow/status/ahoicloud/laravel-sqlite-optimize/fix-php-code-style-issues.yml?branch=main&label=code%20style&style=flat-square)](https://github.com/ahoicloud/laravel-sqlite-optimize/actions?query=workflow%3A"Fix+PHP+code+style+issues"+branch%3Amain)
 [![Total Downloads](https://img.shields.io/packagist/dt/ahoicloud/laravel-sqlite-optimize.svg?style=flat-square)](https://packagist.org/packages/ahoicloud/laravel-sqlite-optimize)
 
-This is where your description should go. Limit it to a paragraph or two. Consider adding a small example.
+This package should optimize SQLite for usage in Larvel. Inspired by the Article from [Italo Baeza Cabrera](https://medium.com/swlh/laravel-optimizing-sqlite-to-dangerous-speeds-ff04111b1f22)
 
-## Support us
-
-[<img src="https://github-ads.s3.eu-central-1.amazonaws.com/laravel-sqlite-optimize.jpg?t=1" width="419px" />](https://spatie.be/github-ad-click/laravel-sqlite-optimize)
-
-We invest a lot of resources into creating [best in class open source packages](https://spatie.be/open-source). You can support us by [buying one of our paid products](https://spatie.be/open-source/support-us).
-
-We highly appreciate you sending us a postcard from your hometown, mentioning which of our package(s) you are using. You'll find our address on [our contact page](https://spatie.be/about-us). We publish all received postcards on [our virtual postcard wall](https://spatie.be/open-source/postcards).
 
 ## Installation
 
@@ -77,6 +70,7 @@ Please review [our security policy](../../security/policy) on how to report secu
 ## Credits
 
 - [Arne Breitsprecher](https://github.com/arnebr)
+- [Italo Baeza Cabrera](https://github.com/darkghosthunter)
 - [All Contributors](../../contributors)
 
 ## License
